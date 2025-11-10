@@ -74,7 +74,7 @@ function getBookData() {
                 pengarang: 'Jonathan Black',
                 kategori: 'Sejarah',
                 status: 'Tersedia',
-                cover: 'img/sejarah dunia yang disembunyikan.jpg'
+                cover: 'img/Sejarah Dunia yang Disembunyikan.jpg'
             }
         ];
         
@@ -86,4 +86,5 @@ function getBookData() {
 }
 
 // Global variable yang akan digunakan di script lain
+
 const dataBuku = getBookData();
