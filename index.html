@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libora – Illuminate Your Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0F172A;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-book-open me-2 text-warning"></i>
+                <div>
+                    <span class="fw-bold fs-5">Libora</span> 
+                    <p class="mb-0 small fst-italic" style="font-family: 'Playfair Display', serif;">Illuminate Your Knowledge</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm text-dark px-3 py-1 ms-lg-3 fw-bold" href="#search-section" style="background-color: #F59E0B;">
+                            Cari Buku Sekarang
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-sm btn-outline-light px-3 py-1" href="login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i> Login/Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5" style="padding-top: 8rem !important; background-color: #84A98C;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-white mb-4 mb-lg-0">
+                        <h1 class="display-3 fw-bolder mb-3" style="font-family: 'Poppins', sans-serif;">
+                            Temukan Cahaya Pengetahuan Anda
+                        </h1>
+                        <p class="lead mb-4" style="font-family: 'Open Sans', sans-serif;">
+                            Libora hadir sebagai portal digital yang profesional dan menenangkan untuk mendukung proses pembelajaran Anda.
+                        </p>
+                        <a href="books.html" class="btn btn-lg fw-bold px-4 me-2" style="background-color: #F59E0B; color: #0F172A;">
+                            <i class="fas fa-book me-2"></i> Lihat Koleksi Buku
+                        </a>
+                        <a href="admin-login.html" class="btn btn-sm mt-3 mt-sm-0 btn-link text-white text-decoration-none">
+                            <i class="fas fa-user-shield me-1"></i> Admin Login
+                        </a>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        
+                        <div class="p-4 rounded shadow-lg" style="background-color: rgba(255, 255, 255, 0.1);">
+                            <i class="fas fa-graduation-cap fa-5x text-white-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="search-section" class="py-5 bg-white">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-bold" style="color: #0F172A; font-family: 'Poppins', sans-serif;">Cari Buku Cepat</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="input-group input-group-lg shadow-sm">
+                            <input type="text" class="form-control" placeholder="Masukkan judul, pengarang, atau kategori..." id="main-search-input">
+                            <button class="btn text-white fw-bold" type="button" style="background-color: #0284C7;">
+                                <i class="fas fa-search me-2"></i> Cari
+                            </button>
+                        </div>
+                        <small class="text-center d-block mt-2" style="color: #475569;">
+                            Pencarian real-time akan diaktifkan melalui JavaScript.
+                        </small>
+                        <div id="quick-search-results" class="mt-3">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: #E5E7EB;">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold" style="color: #0F172A; font-family: 'Poppins', sans-serif;">Koleksi Pilihan Kami</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <img src="img/filosofi teras.jpg" alt="Cover Buku 1" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+                                <h5 class="card-title fw-semibold" style="color: #0F172A;">Filosofi Teras</h5>
+                                <p class="card-text small mb-1" style="color: #475569;">Pengarang: Henry Manampiring</p>
+                                <span class="badge rounded-pill text-bg-success" style="background-color: #84A98C !important;">Non-Fiksi</span>
+                                <span class="badge rounded-pill text-bg-primary ms-2" style="background-color: #0284C7 !important;">Tersedia</span>
+                            </div>
+                            <div class="card-footer border-0 bg-white">
+                                <a href="#" class="btn btn-sm w-100 fw-bold" style="background-color: #F59E0B; color: #0F172A;">Pinjam (Simulasi)</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <img src="img/bumi manusia.jpg" alt="Cover Buku 2" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+                                <h5 class="card-title fw-semibold" style="color: #0F172A;">Bumi Manusia</h5>
+                                <p class="card-text small mb-1" style="color: #475569;">Pengarang: Pramoedya A. T.</p>
+                                <span class="badge rounded-pill text-bg-warning">Fiksi</span>
+                                <span class="badge rounded-pill text-bg-secondary ms-2" style="background-color: #475569 !important;">Dipinjam</span>
+                            </div>
+                            <div class="card-footer border-0 bg-white">
+                                <a href="#" class="btn btn-sm w-100 btn-secondary disabled">Dipinjam</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <img src="img/sapiens.jpeg" alt="Cover Buku 3" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+                                <h5 class="card-title fw-semibold" style="color: #0F172A;">Sapiens</h5>
+                                <p class="card-text small mb-1" style="color: #475569;">Pengarang: Yuval Noah Harari</p>
+                                <span class="badge rounded-pill text-bg-info">Sejarah</span>
+                                <span class="badge rounded-pill text-bg-primary ms-2" style="background-color: #0284C7 !important;">Tersedia</span>
+                            </div>
+                            <div class="card-footer border-0 bg-white">
+                                <a href="#" class="btn btn-sm w-100 fw-bold" style="background-color: #F59E0B; color: #0F172A;">Pinjam (Simulasi)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <img src="img/clean code.jpg" alt="Cover Buku 4" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+                                <h5 class="card-title fw-semibold" style="color: #0F172A;">Clean Code</h5>
+                                <p class="card-text small mb-1" style="color: #475569;">Pengarang: Robert C. Martin</p>
+                                <span class="badge rounded-pill text-bg-danger">Sains</span>
+                                <span class="badge rounded-pill text-bg-primary ms-2" style="background-color: #0284C7 !important;">Tersedia</span>
+                            </div>
+                            <div class="card-footer border-0 bg-white">
+                                <a href="#" class="btn btn-sm w-100 fw-bold" style="background-color: #F59E0B; color: #0F172A;">Pinjam (Simulasi)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="books.html" class="btn btn-lg btn-outline-dark fw-bold" style="color: #0F172A; border-color: #0F172A;">
+                        <i class="fas fa-list-ul me-2"></i> Lihat Semua Buku (400+)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5" style="background-color: #84A98C;">
+            <div class="container text-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="display-5 fw-bold mb-3" style="font-family: 'Poppins', sans-serif;">Tentang Libora</h2>
+                        <p class="lead" style="font-family: 'Open Sans', sans-serif;">
+                            Libora, perpaduan dari "Library" dan "Aurora" (cahaya fajar), diciptakan untuk menjadi sumber pengetahuan yang menerangi setiap perjalanan belajar Anda.
+                        </p>
+                        <p class="small" style="color: #E5E7EB;">
+                            Kami berkomitmen menyediakan akses mudah dan tampilan yang menenangkan, membuat pengalaman menjelajahi koleksi buku menjadi nyaman dan profesional. Temukan inspirasi dan wawasan di setiap halaman digital.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <i class="fas fa-lightbulb fa-7x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4" style="background-color: #0F172A; color: #E5E7EB;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-white">Libora</h5>
+                    <p class="small" style="color: #475569;">"Illuminate Your Knowledge"</p>
+                    <p class="small">&copy; Libora 2025. All rights reserved.</p>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5 class="fw-bold" style="color: #84A98C;">Navigasi Cepat</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none" style="color: #E5E7EB;">Home</a></li>
+                        <li><a href="books.html" class="text-decoration-none" style="color: #E5E7EB;">Koleksi Buku</a></li>
+                        <li><a href="#about" class="text-decoration-none" style="color: #E5E7EB;">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold" style="color: #84A98C;">Hubungi Kami</h5>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-envelope me-2"></i> info@libora.com</li>
+                        <li><i class="fas fa-phone me-2"></i> (021) 123-4567</li>
+                        <li>
+                            <a href="#" class="text-decoration-none me-2" style="color: #E5E7EB;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-decoration-none me-2" style="color: #E5E7EB;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-decoration-none" style="color: #E5E7EB;"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data-buku.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
